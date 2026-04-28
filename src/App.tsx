@@ -23,7 +23,11 @@ function App() {
 
 
   function freebie() {
-    setFreebieWon('Você ganhou um ' + listCoffe[Math.floor(Math.random() * 4)].coffe + ' de brinde🥳🎈')
+    if(freebieWon === '') {
+      setFreebieWon('Você ganhou um ' + listCoffe[Math.floor(Math.random() * 4)].coffe + ' de brinde🥳🎈')
+    } else {
+      return freebieWon
+    }
   }
   
 
