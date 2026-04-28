@@ -1,6 +1,7 @@
 import {useState } from "react"
 import RequireCoffee from "./pages/home/RequireCoffee"
 import './global.css'
+import Brinde from "./pages/home/Brinde"
 
 interface listCoffeeProps {
   id: number,
@@ -33,6 +34,8 @@ function App() {
     {listCoffe.map((itemCoffee) => (
       <RequireCoffee key={itemCoffee.id} nameCoffee={itemCoffee.coffe} sugar={itemCoffee.acucar} />
     ))}
+
+    <Brinde freebieFunction={freebie} />
 
     <p>{freebieWon}</p>
 
