@@ -24,10 +24,14 @@
         list-style: none;
       }
 
+      #title_coffee {
+        font-size: 1.6rem;
+      }
+
       .description_coffee {
         padding:  20px;
         width: 70%;
-        border: 1px solid rgba(169, 178, 230, 0.534);
+        border: 1px solid rgba(169, 178, 230, 0.158);
         border-radius: 10px;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.322);
         margin-bottom: 10px;
@@ -42,5 +46,11 @@
 @media screen and (max-width:768px) {
   .infoCoffee {
     width: 100%;
+
+    .description_coffee {
+      width: 100%;
+    }
+
+    
   }
 }

@@ -3,8 +3,14 @@
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    margin-top: 14px;
+    margin-top: 21px;
+    margin-bottom: 16px;
     font-weight: 600;
     font-size: 1.27rem;
     background-color: rgb(175, 175, 243);
+    
+
+    &:hover {
+        background-image: linear-gradient(to bottom, rgb(175, 175, 243), rgb(125, 125, 238));
+    }
 }
