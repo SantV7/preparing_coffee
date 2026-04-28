@@ -12,8 +12,8 @@ const RequireCoffee = ({ nameCoffee, sugar }: requireCofffeeProps) => {
    <>
     <section className={styles.infoCoffee}>
         <ul>
-            <li>{nameCoffee}</li>
-            <li>{sugar ? 'Com açucar' : 'Sem açucar'}</li>
+            <li className={styles.li_coffee}>{nameCoffee}</li>
+            <li className={styles.li_coffee}>{sugar ? 'Com açucar' : 'Sem açucar'}</li>
         </ul>
     </section>
     </>

@@ -37,7 +37,7 @@ function App() {
 
     <Brinde freebieFunction={freebie} />
 
-    <p>{freebieWon}</p>
+    <p id="freebie-p">{freebieWon}</p>
 
 
     </>
