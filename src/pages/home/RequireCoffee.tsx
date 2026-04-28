@@ -7,9 +7,9 @@ interface requireCofffeeProps {
 
 import styles from './requireCoffee.module.scss'
 const RequireCoffee = ({ nameCoffee, sugar }: requireCofffeeProps) => {
-  return (
-    <>
 
+  return (
+   <>
     <section className={styles.infoCoffee}>
         <ul>
             <li>{nameCoffee}</li>

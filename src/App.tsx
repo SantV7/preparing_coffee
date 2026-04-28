@@ -1,5 +1,6 @@
-import { useState } from "react"
+import {useState } from "react"
 import RequireCoffee from "./pages/home/RequireCoffee"
+import './global.css'
 
 interface listCoffeeProps {
   id: number,
@@ -15,6 +16,13 @@ function App() {
     {id: 3, coffe: 'Gray Coffee', acucar: false},
     {id: 4, coffe: 'American Choco', acucar: true},
   ])
+
+  const [freebieWon, setFreebieWon] = useState<string>('')
+
+
+  function freebie() {
+    setFreebieWon(listCoffe[Math.floor(Math.random() * 4)].coffe)
+  }
   
 
 
@@ -25,7 +33,10 @@ function App() {
     {listCoffe.map((itemCoffee) => (
       <RequireCoffee key={itemCoffee.id} nameCoffee={itemCoffee.coffe} sugar={itemCoffee.acucar} />
     ))}
-     
+
+    <p>{freebieWon}</p>
+
+
     </>
   )
 }
