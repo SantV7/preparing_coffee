@@ -15,6 +15,14 @@ body {
 }
 
 
+#container {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    display: flex;
+}
+
+
 #freebie-p {
     color: white;
     font-size: 1.4rem;

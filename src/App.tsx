@@ -31,13 +31,13 @@ function App() {
   return (
     <>
 
-    {listCoffe.map((itemCoffee) => (
-      <RequireCoffee key={itemCoffee.id} nameCoffee={itemCoffee.coffe} sugar={itemCoffee.acucar} />
-    ))}
-
-    <Brinde freebieFunction={freebie} />
-
-    <p id="freebie-p">{freebieWon}</p>
+    <div id="container">
+      {listCoffe.map((itemCoffee) => (
+        <RequireCoffee key={itemCoffee.id} nameCoffee={itemCoffee.coffe} sugar={itemCoffee.acucar} />
+      ))}
+      <Brinde freebieFunction={freebie} />
+      <p id="freebie-p">{freebieWon}</p>
+    </div>
 
 
     </>
