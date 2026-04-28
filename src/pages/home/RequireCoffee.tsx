@@ -1,12 +1,13 @@
 interface requireCofffeeProps {
   nameCoffee: string,
+  description: string,
   sugar: boolean
 }
 
 
 
 import styles from './requireCoffee.module.scss'
-const RequireCoffee = ({ nameCoffee, sugar }: requireCofffeeProps) => {
+const RequireCoffee = ({ nameCoffee, description ,sugar }: requireCofffeeProps) => {
 
   return (
    <>
@@ -17,7 +18,8 @@ const RequireCoffee = ({ nameCoffee, sugar }: requireCofffeeProps) => {
         </ul>
 
 
-        <div className={styles.descriptionCoffee}>
+        <div className={styles.description_coffee}>
+          <p>{description}</p>
           
         </div>
     </section>

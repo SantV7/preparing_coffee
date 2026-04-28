@@ -1,16 +1,14 @@
 .infoCoffee {
-    min-width: 70vw;
-    max-width: 88vw;
-    height: 17vh;
+    width: 700px;
     padding: 12px;
-    background-color: rgba(75, 63, 105, 0.238); 
+    background-color: rgba(75, 63, 105, 0.144); 
     border-radius: 6px;
     margin-bottom: 10px;
     color: white;
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    gap: 19%;
+    gap: 21px;
     justify-content: center;
 
     .ul_style {
@@ -26,10 +24,23 @@
         list-style: none;
       }
 
-      .descriptionCoffee {
-        padding: 10px 20px;
-        height: 200px;
-        width: 200px;
-        border: 1px solid gray;
+      .description_coffee {
+        padding:  20px;
+        width: 36%;
+        border: 1px solid rgba(169, 178, 230, 0.534);
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.322);
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-flow: row wrap;
+        font-size: 1.3rem;
       }
+}
+
+@media screen and (max-width:768px) {
+  .infoCoffee {
+    width: 100%;
+  }
 }

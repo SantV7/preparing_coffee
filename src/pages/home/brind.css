@@ -1,0 +1,10 @@
+#btn_freebie {
+    padding: 20px 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 1.27rem;
+    background-color: rgb(175, 175, 243);
+}

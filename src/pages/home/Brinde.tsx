@@ -3,10 +3,12 @@ interface freebieProps {
     // o void, meio que nos diz que não está esperando retornar nada
 }
 
+
+import './brind.css'
 const Brinde = ({freebieFunction}: freebieProps) => {
   return (
     <>
-        <button onClick={freebieFunction}>Receber café de brinde</button>
+        <button id='btn_freebie' onClick={freebieFunction}>Receber café de brinde</button>
     </>
   )
 }
